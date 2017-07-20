@@ -1,6 +1,6 @@
 // Copyright © 2017
 // MIT Licensed.
-// Created by Christian R. Vozar <christian@rogueethic.com> ⚜
+// Christian R. Vozar <christian@rogueethic.com> ⚜
 
 package sauce
 

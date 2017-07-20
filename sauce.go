@@ -1,6 +1,6 @@
 // Copyright © 2017
 // MIT Licensed.
-// Created by Christian R. Vozar <christian@rogueethic.com> ⚜
+// Christian R. Vozar <christian@rogueethic.com> ⚜
 
 // Package sauce implements encoding and decoding of ACiD's Standard
 // Architecture for Universal Comment Extensions (SAUCE) as defined in
@@ -95,4 +95,25 @@ var s sauceRecord
 // Marshal returns the SAUCE encoding of v.
 //
 //
-func Marshal(dst, src []byte)
+func Marshal(r Record) ([]byte, error) {
+
+}
+
+// Unmarshal parses data with SAUCE metadata and stores the result in the value r.
+func Unmarshal(data []byte, r Record) error {
+
+	return nil
+}
+
+// Exists
+func Exists(data []byte) bool {
+	if string(data[0:5]) == "SAUCE" {
+		return true
+	}
+
+	return false
+}
+
+func checkValid(data []byte) error {
+	return nil
+}
